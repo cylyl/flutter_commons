@@ -6,3 +6,4 @@ export 'src/encrypt.dart';
 export 'src/validator.dart';
 export 'src/regex.dart';
 export 'src/adaptive.dart';
+export 'src/rotate_tab.dart';

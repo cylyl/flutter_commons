@@ -14,7 +14,7 @@ dependencies:
   common_utils: "^2.0.2"
   logger: "^1.0.0"
   flutter_udid: "^2.0.0"
-  device_info_plus: "^2.0.1"
+  device_info_plus: ^3.2.2
   uuid: "^3.0.4"
   flustars: "^2.0.1"
   encrypt: ">=4.0.0 <6.0.0"

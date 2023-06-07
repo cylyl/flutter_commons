@@ -29,7 +29,7 @@ class DeviceInfo {
         }
       } else {
         if (Platform.isAndroid) {
-          guid = (await deviceInfoPlugin.androidInfo).androidId;
+          guid = (await deviceInfoPlugin.androidInfo).serialNumber;
         } else if (Platform.isIOS) {
           guid = (await deviceInfoPlugin.iosInfo).identifierForVendor;
         } else if (Platform.isLinux) {

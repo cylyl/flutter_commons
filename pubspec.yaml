@@ -17,6 +17,7 @@ dependencies:
   uuid: "^3.0.7"
   flustars: "^2.0.1"
   encrypt: ">=4.0.0 <6.0.0"
+  advertising_id: ^2.5.0
 
 dev_dependencies:
   flutter_test:

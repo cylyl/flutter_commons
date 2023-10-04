@@ -6,6 +6,7 @@ import 'package:flutter_udid/flutter_udid.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:uuid/uuid.dart';
 import 'package:flustars/flustars.dart';
+import 'package:advertising_id/advertising_id.dart';
 
 class DeviceInfo {
 
@@ -30,6 +31,12 @@ class DeviceInfo {
       } else {
         if (Platform.isAndroid) {
           guid = (await deviceInfoPlugin.androidInfo).serialNumber;
+          if('unknown' == guid) {
+            String? advertisingId = await AdvertisingId.id(true);
+            if(advertisingId != null) {
+              guid = advertisingId;
+            }
+          }
         } else if (Platform.isIOS) {
           guid = (await deviceInfoPlugin.iosInfo).identifierForVendor;
         } else if (Platform.isLinux) {

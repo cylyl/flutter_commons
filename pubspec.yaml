@@ -11,8 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
   common_utils: "^2.1.0"
-  logger: "^1.4.0"
-  flutter_udid: "^2.0.1"
+  logger: "^2.1.0"
+  flutter_udid: "^3.0.0"
   device_info_plus: ^9.0.0
   uuid: "^3.0.7"
   flustars: "^2.0.1"
